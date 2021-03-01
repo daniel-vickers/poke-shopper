@@ -1,0 +1,43 @@
+body {
+	background-color: #f3f3f3;
+	padding: 20px 20px 30px;
+}
+
+body .container {
+	width: 300px;
+	text-align: center;
+}
+
+body .container h1 {
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+body .container #submit {
+	text-decoration: none;
+	padding: 10px 20px;
+	background-color: #333;
+	color: white;
+}
+
+body .container .wrapper {
+	display: block;
+	margin-bottom: 40px;
+}
+
+body .container .wrapper input {
+	vertical-align: middle;
+}
+
+body .container .wrapper label {
+	font-weight: bold;
+}
+
+body .container .wrapper p span.paused {
+	color: red;
+}
+
+body .container .wrapper p span.play {
+	color: green;
+}

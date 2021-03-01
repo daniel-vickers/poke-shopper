@@ -1,0 +1,27 @@
+{
+ "manifest_version": 2,
+ "name": "PokeShopper",
+ "version": "1.0.0",
+ "description": "Alert you of new stock on Pokemon product.",
+ "short_name": "PokeShopper",
+ "permissions": ["activeTab", "declarativeContent", "storage"],
+ "content_scripts": [
+   {
+     "matches": ["https://www.smythstoys.com/uk/en-gb/toys/action-figures-and-playsets/pokemon/pokemon-trading-cards-game/*"],
+     "css": ["extension.css"],
+     "js": ["stock.js"]
+   }
+ ],
+ "browser_action": {
+   "default_title": "PokeShopper",
+   "default_popup": "popup.html",
+   "default_icon": {
+     "16": "icons/icon16.png",
+     "32": "icons/icon32.png"
+   }
+ },
+ "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
